@@ -1,5 +1,5 @@
 header {
-  background: #f9f2ede2;
+  background: #d9cdf7;
   position: relative;
   width: 100%;
   top: 0;
@@ -7,7 +7,7 @@ header {
   box-sizing: border-box;
 }
 body {
-  background-color: #f9f2ed;
+  background-color: #d9cdf7;
 }
 h1 {
   margin-left: 7%;
@@ -78,15 +78,14 @@ h1 {
 .fotoEtexto:hover {
   transform: scale(1.1);
 }
-.foto:hover{
+.foto:hover {
   transform: scale(1.1);
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
-
 }
 .framebotao {
   display: flex;
   flex-direction: row;
-  justify-content:end;
+  justify-content: end;
   gap: 5%;
 }
 .botao {
@@ -95,7 +94,7 @@ h1 {
   padding: 3%;
   border-radius: 10px;
   font-family: "TT Commons", sans-serif;
-  color: #f9f2ed;
+  color: #d9cdf7;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform-origin: center;
 }
@@ -116,7 +115,6 @@ h3 {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "TT Commons", sans-serif;
-
 }
 .projeto h4 {
   font-size: 1.8em;
@@ -167,7 +165,7 @@ video {
   transform-origin: center;
   border-radius: 20px;
 }
-.video-wrap:hover{
+.video-wrap:hover {
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
@@ -261,7 +259,7 @@ video {
   }
 
   .card .face.face2 {
-    background-color: #f9f2ed;
+    background-color: #d9cdf7;
     border-radius: 20px;
   }
 }
@@ -273,22 +271,31 @@ video {
 }
 .frameevento h2 {
   font-size: 2em;
+  text-align: center;
 }
-
 .evento {
   font-family: "TT Commons", sans-serif;
   font-size: 20px;
-  text-align: justify;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 24px;
-  top: 0px;
-  left: 0px;
-  margin: 10%;
+  gap: 8%;
 }
-.evento h4 {
+
+.lista {
+  border-radius: 20px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  padding: 3%;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transform-origin: center;
+}
+.lista:hover {
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.lista h4 {
   font-size: 25px;
+  text-align: center;
 }
 @media screen and (max-width: 1250px) {
   .frameFoto {
@@ -299,7 +306,7 @@ video {
     width: 30%;
     height: 30%;
   }
-  .frameprojeto h2{
+  .frameprojeto h2 {
     margin-right: 79%;
     margin-bottom: 0;
   }
@@ -307,7 +314,7 @@ video {
     display: flex;
     flex-direction: column;
   }
-  .projeto h4{
+  .projeto h4 {
     margin-top: 0;
   }
   video {
@@ -322,25 +329,25 @@ video {
   .tituloinicio {
     font-size: 40px;
   }
-  .container{
-    .card{
-      .face{
-        &.face1{
-          .producaoartigo{
+  .container {
+    .card {
+      .face {
+        &.face1 {
+          .producaoartigo {
             font-size: 0.9em;
           }
         }
-        &.face2{
-          h2{
+        &.face2 {
+          h2 {
             font-size: 1.3em;
           }
         }
-        }
-      }
-      .card:hover .face.face2 {
-        h2 {
-          font-size: 0.7em;
-        }
       }
     }
+    .card:hover .face.face2 {
+      h2 {
+        font-size: 0.7em;
+      }
+    }
+  }
 }
