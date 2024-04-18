@@ -25,9 +25,8 @@ h1 {
   display: flex;
   flex-direction: column;
   font-family: "TT Commons", sans-serif;
-  font-size: 47px;
+  font-size: 3vw;
   align-items: baseline;
-  text-align: justify;
 }
 .tituloinicio p {
   margin: 0;
@@ -40,7 +39,7 @@ h1 {
 }
 .descricaoinicio {
   max-width: 75%;
-  font-size: 1.2em;
+  font-size: 1.2vw;
   line-height: 1.28;
   font-family: "TT Commons", sans-serif;
 }
@@ -82,6 +81,20 @@ h1 {
   transform: scale(1.1);
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
 }
+.texto {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.texto h3 {
+  font-size: 4vh;
+  font-family: "TT Commons", sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.texto p {
+  font-size: 2.8vh;
+}
 .framebotao {
   display: flex;
   flex-direction: row;
@@ -97,16 +110,11 @@ h1 {
   color: #d9cdf7;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform-origin: center;
+  font-size: 1vw;
 }
 .botao:hover {
   transform: scale(1.2);
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
-}
-h3 {
-  font-size: 1.8em;
-  font-family: "TT Commons", sans-serif;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 .frameprojeto h2 {
   font-size: 3em;
@@ -120,14 +128,6 @@ h3 {
   font-size: 1.8em;
   font-family: "TT Commons", sans-serif;
   margin: 0;
-}
-.texto {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-}
-.texto p {
-  font-size: 1.1em;
 }
 .frameprojeto {
   display: flex;
@@ -145,7 +145,7 @@ h3 {
 }
 .textoprojeto {
   font-family: "TT Commons", sans-serif;
-  font-size: 22px;
+  font-size: 3vh;
 }
 video {
   display: block;
@@ -274,12 +274,13 @@ video {
   text-align: center;
 }
 .evento {
-  font-family: "TT Commons", sans-serif;
-  font-size: 20px;
   display: flex;
   flex-direction: row;
+  font-family: "TT Commons", sans-serif;
+  font-size: 20px;
   justify-content: center;
-  gap: 8%;
+  align-items: center;
+  gap: 10vw;
 }
 
 .lista {
@@ -289,12 +290,15 @@ video {
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform-origin: center;
 }
+.lista p{
+  font-size: 1.3vw;
+}
 .lista:hover {
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
 .lista h4 {
-  font-size: 25px;
+  font-size: 1.8vw;
   text-align: center;
 }
 @media screen and (max-width: 1250px) {
@@ -303,8 +307,17 @@ video {
     flex-direction: column;
   }
   .foto {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
+  }
+  .texto h3 {
+    font-size: 3vw;
+  }
+  .texto p {
+    font-size: 2.5vw;
+  }
+  .botao{
+    font-size: 2vw;
   }
   .frameprojeto h2 {
     margin-right: 79%;
@@ -313,6 +326,10 @@ video {
   .projeto {
     display: flex;
     flex-direction: column;
+  }
+  .textoprojeto{
+    font-size: 3vw;
+    text-align: justify;
   }
   .projeto h4 {
     margin-top: 0;
@@ -326,15 +343,71 @@ video {
   .iconinicio {
     max-width: 300px;
   }
-  .tituloinicio {
-    font-size: 40px;
-  }
   .container {
     .card {
       .face {
         &.face1 {
           .producaoartigo {
             font-size: 0.9em;
+          }
+        }
+        &.face2 {
+          h2 {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+    .card:hover .face.face2 {
+      h2 {
+        font-size: 0.7em;
+      }
+    }
+  }
+  .evento{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .tituloinicio{
+    font-size: 7vw;
+  }
+  .descricaoinicio{
+    font-size: 2vw;
+  }
+  .texto h3 {
+    font-size: 3vw;
+  }
+  .texto p {
+    font-size: 2.5vw;
+  }
+  .botao{
+    font-size: 2vw;
+  }
+  .frameprojeto h2 {
+    margin-right: 79%;
+    margin-bottom: 0;
+    font-size: 8vw;
+  }
+  .producao h2{
+    font-size: 7vw;
+  }
+  .frameevento h2{
+    font-size: 7vw;
+  }
+  .lista p{
+    font-size: 3vw;
+  }
+  .lista h4 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .container {
+    .card {
+      .face {
+        &.face1 {
+          .producaoartigo {
+            font-size: 0.8em;
           }
         }
         &.face2 {
