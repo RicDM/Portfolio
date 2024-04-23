@@ -68,8 +68,8 @@ h1 {
   align-items: center;
 }
 .foto {
-  width: 60%;
-  height: 60%;
+  width: 45%;
+  height: auto;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform-origin: center;
   border-radius: 20px;
@@ -307,8 +307,8 @@ video {
     flex-direction: column;
   }
   .foto {
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: auto;
   }
   .texto h3 {
     font-size: 3vw;
