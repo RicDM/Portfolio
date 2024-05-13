@@ -61,7 +61,7 @@ h1 {
 .fotoEtexto {
   display: flex;
   flex-direction: row;
-  gap: 1%;
+  gap: 20px;
   font-family: "TT Commons", sans-serif;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform-origin: center;
