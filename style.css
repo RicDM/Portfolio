@@ -47,7 +47,7 @@ h1 {
   margin-top: 3%;
   width: 3.5%;
   margin-left: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 .frameFoto {
   display: flex;
@@ -61,14 +61,14 @@ h1 {
 .fotoEtexto {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 2%;
   font-family: "TT Commons", sans-serif;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform-origin: center;
   align-items: center;
 }
 .foto {
-  width: 43%;
+  max-width: 20vw;
   height: auto;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform-origin: center;
@@ -81,18 +81,19 @@ h1 {
   transform: scale(1.1);
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
 }
-.texto {
+.texto p{
   display: flex;
   flex-direction: column;
 }
 .texto h3 {
-  font-size: 4vh;
+  font-size: 2vw;
   font-family: "TT Commons", sans-serif;
   margin-bottom: 0;
   margin-top: 0;
 }
 .texto p {
-  font-size: 2.8vh;
+  font-family: "TT Commons", sans-serif;
+  font-size: 1.5vw;
 }
 .framebotao {
   display: flex;
@@ -104,7 +105,7 @@ h1 {
   text-decoration: none;
   background-color: #000;
   padding: 3%;
-  border-radius: 10px;
+  border-radius: 0.8vh;
   font-family: "TT Commons", sans-serif;
   color: #d9cdf7;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -319,8 +320,7 @@ video {
     flex-direction: column;
   }
   .foto {
-    width: 35%;
-    height: auto;
+    max-width: 25vw;
   }
   .texto h3 {
     font-size: 3vw;
@@ -395,6 +395,9 @@ video {
   }
   .descricaoinicio{
     font-size: 2vw;
+  }
+  .foto {
+    max-width: 30vw;
   }
   .texto h3 {
     font-size: 3vw;
